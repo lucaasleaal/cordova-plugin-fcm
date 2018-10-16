@@ -41,7 +41,7 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
 			Log.d(TAG, "\tNotification Message: " + remoteMessage.getNotification().getBody());
 		}
 
-		/*Map<String, Object> data = new HashMap<String, Object>();
+		Map<String, Object> data = new HashMap<String, Object>();
 		data.put("wasTapped", false);
 		for (String key : remoteMessage.getData().keySet()) {
                 Object value = remoteMessage.getData().get(key);
@@ -50,7 +50,7 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
         }
 
 		Log.d(TAG, "\tNotification Data: " + data.toString());
-        FCMPlugin.sendPushPayload( data );*/
+        FCMPlugin.sendPushPayload( data );
         //sendNotification(remoteMessage.getNotification().getTitle(), remoteMessage.getNotification().getBody(), remoteMessage.getData());
     }
     // [END receive_message]
