@@ -33,7 +33,7 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
         // If the application is in the foreground handle both data and notification messages here.
         // Also if you intend on generating your own notifications as a result of a received FCM
         // message, here is where that should be initiated. See sendNotification method below.
-        Log.d(TAG, "==> MyFirebaseMessagingService onMessageReceived");
+        Log.d(TAG, "==> MyFirebaseMessagingService onMessageReceived LUCAS");
 
         Class cls = remoteMessage.getNotification;
         Log.d(TAG, "clusbinho A funcao getNotification é: " + cls.getName());
